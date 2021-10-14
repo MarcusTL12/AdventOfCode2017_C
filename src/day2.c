@@ -10,24 +10,6 @@ void d2p1() {
 
     int acc = 0;
 
-    bool done = false;
-
-    char *p = input;
-
-    while (!done) {
-        int min = atoi(p), max = min;
-        bool line_done = false;
-        while (isdigit(*p)) p++;
-        while (!isdigit(*p)) p++;
-        while (!line_done) {
-            while (isdigit(*p)) p++;
-            while (!isdigit(*p)) {
-                if (*p == '\n') line_done = true;
-                p++;
-            }
-        }
-    }
-
     free(input);
 }
 
