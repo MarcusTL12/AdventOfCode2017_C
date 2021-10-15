@@ -16,6 +16,7 @@ build $build_dir/regex_util.o: cc ./AoC_C_utils/src/regex_util.c
 build $build_dir/md5_util.o: cc ./AoC_C_utils/src/md5_util.c
 build $build_dir/bitfield.o: cc ./AoC_C_utils/src/bitfield.c
 build $build_dir/deque.o: cc ./AoC_C_utils/src/deque.c
+build $build_dir/str_split_iter.o: cc ./AoC_C_utils/src/str_split_iter.c
 build $build_dir/file_util.o: cc ./AoC_C_utils/src/file_util.c
 
 build a.out: link $
@@ -27,4 +28,5 @@ build a.out: link $
     $build_dir/md5_util.o $
     $build_dir/bitfield.o $
     $build_dir/deque.o $
+    $build_dir/str_split_iter.o $
     $build_dir/file_util.o
